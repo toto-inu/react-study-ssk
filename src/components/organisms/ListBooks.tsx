@@ -15,7 +15,7 @@ export const ListBooks = ({ books }: Props) => {
             <BookAttribute name="タイトル">{`『${book.title}』`}</BookAttribute>
             <BookAttribute name="著者">{`${book.author}`}</BookAttribute>
             <BookAttribute name="概要">{book.itemCaption}</BookAttribute>
-            <BookAttribute name="著者">{`レビュースコア: ${book.reviewAverage} (${book.reviewCount})`}</BookAttribute>
+            <BookAttribute name="レビュー">{`${book.reviewAverage} (${book.reviewCount})`}</BookAttribute>
           </VStack>
         </HStack>
       </a>

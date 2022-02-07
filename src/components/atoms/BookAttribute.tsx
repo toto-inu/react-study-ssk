@@ -10,8 +10,8 @@ export const BookAttribute = (props: Props) => {
   const slicedText =
     props.children.length > maxLength ? `${props.children.slice(0, maxLength)}...` : props.children
   return (
-    <HStack w="100%">
-      <Text minW="80px">{props.name}: </Text>
+    <HStack w="100%" alignItems="start">
+      <Text minW="100px">{props.name} </Text>
       {props.children ? <Text fontWeight="bold">{slicedText}</Text> : <Text>-</Text>}
     </HStack>
   )
